@@ -1,0 +1,78 @@
+# PlasmaCore Configuration
+
+# Авторизация
+auth:
+  session-minutes: 60
+  min-password: 4
+  max-password: 32
+
+# Дома
+homes:
+  max-homes: 3
+  teleport-delay: 3
+
+# Экономика
+coins:
+  start-balance: 100
+  symbol: "⛃"
+
+# Scoreboard
+scoreboard:
+  enabled: true
+  title: "&b&lPLASMA"
+  update-ticks: 20
+
+# Tab
+tab:
+  enabled: true
+  header: "\n&b&lPLASMA SERVER\n&7Добро пожаловать!\n"
+  footer: "\n&7Онлайн: &a{online}&7/&a{max}\n&7Пинг: &a{ping}ms\n"
+
+# HUD
+hud:
+  enabled: true
+  format: "&c❤ {health} &7| &e{coins}⛃ &7| &b{players} онлайн"
+
+# Сообщения
+messages:
+  prefix: "&b&lPLASMA &8» &r"
+  no-permission: "&cНет прав!"
+  player-only: "&cТолько для игроков!"
+  player-not-found: "&cИгрок не найден!"
+  
+  # Auth
+  already-registered: "&cВы уже зарегистрированы!"
+  not-registered: "&eПожалуйста, зарегистрируйтесь: &a/register <пароль>"
+  register-success: "&aВы успешно зарегистрировались!"
+  login-required: "&eВойдите в аккаунт: &a/login <пароль>"
+  login-success: "&aДобро пожаловать на Plasma!"
+  wrong-password: "&cНеверный пароль!"
+  password-too-short: "&cПароль слишком короткий! Минимум {min} символов"
+  password-too-long: "&cПароль слишком длинный! Максимум {max} символов"
+  
+  # Homes
+  home-set: "&aДом &e{name} &aустановлен!"
+  home-deleted: "&aДом &e{name} &aудалён!"
+  home-not-found: "&cДом &e{name} &cне найден!"
+  home-teleport: "&aТелепортация через &e{time} &aсек..."
+  home-teleported: "&aВы телепортированы домой!"
+  home-limit: "&cМаксимум домов: &e{max}"
+  spawn-set: "&aСпавн установлен!"
+  spawn-teleport: "&aТелепортация на спавн..."
+  
+  # TPA
+  tpa-sent: "&aЗапрос отправлен игроку &e{player}"
+  tpa-received: "&e{player} &aхочет телепортироваться к вам!\n&a/tpaccept &7- принять\n&c/tpdeny &7- отклонить"
+  tpa-accepted: "&aЗапрос принят!"
+  tpa-denied: "&cЗапрос отклонён"
+  tpa-no-request: "&cНет активных запросов!"
+  tpa-expired: "&cЗапрос истёк"
+  tpa-self: "&cНельзя отправить запрос себе!"
+  
+  # Coins
+  balance: "&aВаш баланс: &e{balance}⛃"
+  balance-other: "&aБаланс &e{player}&a: &e{balance}⛃"
+  pay-success: "&aВы отправили &e{amount}⛃ &aигроку &e{player}"
+  pay-received: "&aВы получили &e{amount}⛃ &aот &e{player}"
+  pay-no-money: "&cНедостаточно средств!"
+  pay-invalid: "&cНеверная сумма!"
